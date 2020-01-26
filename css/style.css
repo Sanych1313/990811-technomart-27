@@ -43,7 +43,7 @@ a {
 .services,
 .body__title,
 .service {
-  background-color: #f2f6f8;
+  background-color: #f4f7f9;
 }
 
 header li,
@@ -411,7 +411,7 @@ input[type="search"]:focus {
 }
 
 .categories__bottom {
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 }
 
 .categories-items__item {
@@ -728,7 +728,7 @@ input[type="search"]:focus {
 
 .populars__button,
 .brands__button {
-  margin: 25px 24px 24px 0px;
+  margin: 26px 24px 24px 0px;
   width: 253px;
 }
 
@@ -743,6 +743,8 @@ input[type="search"]:focus {
   flex-direction: column;
   align-items: center;
   width: 220px;
+
+  border: 1px solid #eaeaea;
 }
 
 .bosch--new {
@@ -768,14 +770,23 @@ input[type="search"]:focus {
 }
 
 .not-hidden {
+  margin-bottom: 8px;
+}
+
+.hidden {
+  margin-bottom: 5px;;
+}
+
+.not-hidden {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 176px;
+  min-height: 170px;
 }
 
 .hidden {
+  display: none;
   padding-top: 43px;
 }
 
@@ -784,10 +795,9 @@ input[type="search"]:focus {
   display: block;
 }
 
-.bosch__title,
-.good-bosch__title {
+.bosch__title {
   margin: 0px;
-  margin-bottom: 8px;
+  margin-bottom: 11px;
 
   width: 180px;
 
@@ -799,6 +809,206 @@ input[type="search"]:focus {
   text-align: center;
 }
 
-.populars-goods:last-child .bosch__title {
+.bosch__title span {
+  text-transform: uppercase;
+}
+
+.bosch:last-child .bosch__title {
   margin-bottom: 38px;
+}
+
+.catalog-goods {
+  position: absolute;
+  top: 168px;
+  left: 240px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bosch__price {
+  margin: 0px;
+  margin-bottom: 10px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  color: #a9a9a9;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.bosch__discount {
+  position: relative;
+  margin-bottom: 20px;
+
+  width: 138px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+}
+
+.bosch__discount::after {
+  content: "";
+  
+  position: absolute;
+  top: 0px;
+  right: -20px;
+
+  width: 0px;
+  height: 0px;
+
+  border: 19px solid #ffffff;
+  border-left-color: #ee3643;
+}
+
+.bosch__discount:hover .bosch__discount::after,
+.bosch__discount:focus .bosch__discount::after {
+  border-left-color: #ca2c37;
+}
+
+.bosch:hover,
+.bosch:focus {
+  box-shadow: 0px 10px 25px rgba(41,52,73,0.5);
+}
+
+.bosch:hover .not-hidden,
+.bosch:focus .not-hidden {
+  display: none;
+}
+
+.bosch:hover .hidden,
+.bosch:focus .hidden {
+  display: block;
+}
+
+.bosch__buy {
+  display: block;
+  margin-bottom: 8px;
+  padding-top: 6px;
+  padding-bottom: 14px;
+  width: 135px;
+  border-radius: 2px;
+
+  font-size: 14px;
+  color: inherit;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #63a63e;
+  box-shadow: inset 0 -3px #367315;
+}
+
+.bosch__buy:hover,
+.bosch__buy:focus {
+  background-color: #5fbb2d;
+}
+
+.bosch__buy:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.bosch__bookmark {
+  display: block;
+  margin-bottom: 46px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  width: 135px;
+  border: 3px solid #63a63e;
+  border-radius: 2px;
+
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+.bosch__bookmark:hover,
+.bosch__bookmark:focus {
+  border: 3px solid #32425c;
+}
+
+.bosch__bookmark:active {
+  border: 3px solid rgba(50, 66, 92, 0.3);
+
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.brands-items {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.brands-items:first-of-type {
+  margin-bottom: 20px;
+}
+
+.brands-items__item {
+  width: 220px;
+  height: 145px;
+  border: 1px solid #e5e5e5;
+}
+
+.brands-items__item:hover,
+.brands-items__item:focus {
+  box-shadow: 0px 10px 25px rgba(41,52,73,0.5);
+}
+
+.brands-items__item:active {
+  box-shadow: 0px 4px 10px rgba(41,52,73,0.5);
+}
+
+.brands-items__item:active img {
+  opacity: 0.3;
+}
+
+.brands-items__link {
+  display: block;
+}
+
+.brands-items__link--bosch {
+  padding: 52px 0px 50px 46px;
+}
+
+.brands-items__link--makita {
+  padding: 49px 0px 50px 47px;
+}
+
+.brands-items__link--dewolt {
+  padding: 47px 0px 48px 36px;
+}
+
+.brands-items__link--interscol {
+  padding: 20px 0px 31px 9px;
+}
+
+.brands-items__link--hitachi {
+  padding: 57px 0px 51px 28px;
+}
+
+.brands-items__link--lg {
+  padding: 34px 0px 32px 48px;
+}
+
+.brands-items__link--aeg {
+  padding: 22px 0px 21px 35px;
+}
+
+.brands-items__link--metado {
+  padding: 34px 0px 36px 10px;
+}
+
+.brands {
+  margin-bottom: 85px;
 }
