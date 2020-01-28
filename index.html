@@ -286,7 +286,7 @@
     </section>
 
     <section class="services">
-      <div class="container">
+      <div class="container services__container">
         <div class="services__description">
           <h2 class="services__title">Сервисы</h2>
           <p class="services__text">
@@ -296,7 +296,7 @@
         </div>
 
         <ul class="services__items">
-          <li class="services__item">Доставка</li>
+          <li class="services__item services__item--active">Доставка</li>
           <li class="services__item">Гарантия</li>
           <li class="services__item">Кредит</li>
         </ul>
@@ -304,7 +304,7 @@
         <div class="services__slider services-slider">
           <div class="services-slider__delivery">
             <h4 class="services-slider__title">Доставка</h4>
-            <p class="services-slider__text">
+            <p class="services-slider__text services-slider__text--delivery">
               Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно!
               Ведь мы не плохо заработаем,<br>
@@ -313,9 +313,9 @@
           </div>
 
           <div class="services-slider__guarantee">
-            <h4 class="services-slider__ title">Гарантия</h4services-slider__title>
-            <p class="services-slider__text">
-              Если купленный у нас товар поломается или заискрит,
+            <h4 class="services-slider__ title">Гарантия</h4>
+            <p class="services-slider__text services-slider__text--guarantee">
+              Если купленный у нас товар поломается или заискрит,<br>
               а также в случае пожара, спровоцированного его
               возгоранием,  вы всегда можете быть уверены в
               нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
@@ -325,10 +325,10 @@
 
           <div class="services-slider__credit">
             <h4 class="services-slider__title">Кредит</h4>
-            <p class="services-slider__text">
-            Залезть в долговую яму проще!<br>
-            Кредитные консультанты придут вам на помощь.
-          </p>
+            <p class="services-slider__text services-slider__text--credit">
+              Залезть в долговую яму проще!<br>
+              Кредитные консультанты придут вам на помощь.
+            </p>
             <a class="services-slider__button button" href="#">
               <span>Отправить заявку</span>
             </a>
@@ -337,8 +337,8 @@
       </div>
     </section>
     
-    <section class="information">
-      <section class="information__advantages advantages container">
+    <div class="information container">
+      <section class="information__advantages advantages">
         <h2 class="advantages__title">Компания "Техномарт"</h2>
 
         <p class="advantages__text">
@@ -352,7 +352,7 @@
         </p>
 
         <ul class="advantages__items delivery">
-        <li class="delivery__item">Деловые линии</li>
+          <li class="delivery__item">Деловые линии</li>
           <li class="delivery__item">Автотрейдинг</li>
           <li class="delivery__item">ЖелДорЭкспедиция</li>
         </ul>
@@ -372,7 +372,7 @@
           <span>Заблудились? Напишите нам!</span>
         </a>
       </section>
-    </section>
+    </div>
 
     <footer class="footer">
       <div class="footer__top container">
@@ -426,7 +426,7 @@
       <div class="footer__bottom">
         <div class="footer__bottom-wrapper container">
           <p class="footer__copyright-top">
-            &#169; 2010-2017 Компания "Техномарт"
+            &#169; 2010-2019 Компания "Техномарт"
             Все права защищены
           </p>
 
@@ -448,7 +448,7 @@
           </p>
 
           <p class="footer__copyright-bottom">
-            Разработано -
+            Разработано —
             <a class="footer__copyright-bottom-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
