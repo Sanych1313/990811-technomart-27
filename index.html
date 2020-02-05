@@ -430,17 +430,11 @@
             Все права защищены
           </p>
 
-          <ul class="footer__social-items">
-            <li class="footer__social-item">
-              <a class="footer__social-link social-vk" href="#">Вконтакте</a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link social-fb" href="#">Фейсбук</a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link social-insta" href="#">Инстаграм</a>
-            </li>
-          </ul>
+          <div class="footer__social-items">
+            <a class="footer__social-link social-vk" href="#">Вконтакте</a>
+            <a class="footer__social-link social-fb" href="#">Фейсбук</a>
+            <a class="footer__social-link social-insta" href="#">Инстаграм</a>
+          </div>
 
           <p class="footer__feedback">
             Обратная связь:
@@ -458,21 +452,32 @@
     <div class="popup write-us">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="write-us__label">Ваше имя:</label>
-          <input class="write-us__name" id="login-field" type="text" name="login" placeholder="Имя Фамилия">
+        <div class="write-us__container">
+          <div class="write-us__item">
+            <label class="write-us__label" for="login-field">Ваше имя:</label>
+            <input class="write-us__name" id="login-field" type="text" name="login" placeholder="Имя Фамилия">
+          </div>
 
-          <label for="write-us__label">Ваш e-mail:</label>
-          <input class="write-us__email" id="email-field" type="email" name="email" placeholder="email@example.com">
+          <div class="write-us__item">
+            <label class="write-us__label" for="email-field">Ваш e-mail:</label>
+            <input class="write-us__email" id="email-field" type="email" name="email" placeholder="email@example.com">
+          </div>
 
-          <label for="write-us__label">Текст письма:</label>
-          <textarea class="write-us__text" id="write-to-us" name="write-to-us" rows="6">В свободной форме</textarea>
-        <a class="write-us__button button" href="#"><span>Отправить</span></a>
+          <div  class="write-us__item-text">
+            <label class="write-us__label" for="write-to-us">Текст письма:</label>
+            <textarea class="write-us__text" id="write-to-us" name="write-to-us" rows="6">В свободной форме</textarea>
+          </div>
+        </div>
+
+          <div class="write-us__send">
+            <a class="write-us__button button" href="#"><span>Отправить</span></a>
+          </div>
       </form>
     </div>
 
     <div class="popup big-map">
       <a class="big-map__link" href="#">
-        <img src="img/map-big.jpg" width="1200" height="779" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <img src="img/map-big.png" width="970" height="476" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </a>
     </div>
   </body>
