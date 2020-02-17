@@ -28,7 +28,7 @@
               </li>
 
               <li class="top-menu__item">
-                <a class="top-menu__link" href="#">Корзина: 10</a>
+                <a class="top-menu__link top-menu__link--active" href="#">Корзина: 10</a>
               </li>
             
               <li class="top-menu__item">
@@ -52,7 +52,9 @@
         </div>
 
         <div class="header__personal-area personal-area">
-          <a class="personal-area__login" href="#">Равшан Джамшутович</a>
+          <a class="personal-area__login" href="#">
+            <span>Равшан Джамшутович</span>
+          </a>
 
           <ul class="personal-area__items">
             <li class="personal-area__item">
@@ -367,7 +369,7 @@
         </p>
         <p class="service__description">
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
-          ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
       </div>
     </section>
@@ -424,7 +426,7 @@
       <div class="footer__bottom">
         <div class="footer__bottom-wrapper container">
           <p class="footer__copyright-top">
-            &#169; 2010-2019 Компания "Техномарт"
+            &#169; 2010—2019 Компания «Техномарт»
             Все права защищены
           </p>
 
@@ -447,13 +449,15 @@
       </div>
     </footer>
 
-    <div class="popup cart">
+    <div class="popup-cart cart">
       <h2 class="cart__title">Товар добавлен в корзину!</h2>
       <div class="cart__buttons">
-        <a class="cart__button-buy" href="#">
-          Оформить заказ
+        <a class="cart__button-buy button" href="#">
+          <span>Оформить заказ</span>
         </a>
-        <span class="cart__button-close">Продолжить покупку</span>
+        <span class="cart__button-close button cart__button-close--focus">
+          <span>Продолжить покупку</span>
+        </span>
       </div>
     </div>
 
