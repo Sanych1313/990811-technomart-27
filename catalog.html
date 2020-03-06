@@ -18,7 +18,7 @@
           <div class="header__top-wrapper">
             <form class="header__form" action="https://echo.htmlacademy.ru" method="post">
               <label class="header__label header__label--search">
-                <input type="search" value="Поиск:">
+                <input type="search" placeholder="Поиск:">
               </label>
             </form>
 
@@ -52,9 +52,11 @@
         </div>
 
         <div class="header__personal-area personal-area">
-          <a class="personal-area__login" href="#">
-            <span>Равшан Джамшутович</span>
-          </a>
+          <span class="personal-area__login" href="#">
+            <a href="#" class="icon-user"></a>
+            <a href="#" class="user-name">Равшан Джамшутович</a>
+            <a href="#" class="icon-logout"></a>
+          </span>
 
           <ul class="personal-area__items">
             <li class="personal-area__item">
@@ -115,8 +117,8 @@
       <div class="body__sort sort">
         <span class="sort__title">Сортировка:</span>
         <a class="sort__link sort__link--active" href="#">По цене</a>
-        <a class="sort__link" href="#">По типу</a>
-        <a class="sort__link" href="#">По функционалу</a>
+        <a class="sort__link" href="#"><span>По типу</span></a>
+        <a class="sort__link" href="#"><span>По функционалу</span></a>
         <a class="sort__icon sort__icon-up sort__icon-up--active" href="#">Вверх</a>
         <a class="sort__icon sort__icon-down" href="#">Вниз</a>
       </div>
@@ -156,9 +158,9 @@
           <input id="network" type="radio" name="power-supply" value="network">
           <label class="radio__label" for="network">Сетевые</label>
         </div>
-        <a class="filter__button">
-          <span>Показать</span>
-        </a>
+        <button class="filter__button">
+          </span>Показать</span>
+        </button>
       </form>
 
       <div class="body__catalog catalog-goods">
@@ -450,14 +452,17 @@
     </footer>
 
     <div class="popup-cart cart">
-      <h2 class="cart__title">Товар добавлен в корзину!</h2>
-      <div class="cart__buttons">
-        <a class="cart__button-buy button" href="#">
-          <span>Оформить заказ</span>
-        </a>
-        <span class="cart__button-close button cart__button-close--focus">
-          <span>Продолжить покупку</span>
-        </span>
+      <div class="poput-cart__button-close"></div>
+      <div class="cart-wrapper">
+        <h2 class="cart__title">Товар добавлен в корзину!</h2>
+        <div class="cart__buttons">
+          <a class="cart__button-buy button" href="#">
+            <span>Оформить заказ</span>
+          </a>
+          <span class="cart__button-close button cart__button-close--focus">
+            <span>Продолжить покупку</span>
+          </span>
+        </div>
       </div>
     </div>
 

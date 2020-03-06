@@ -18,7 +18,7 @@
           <div class="header__top-wrapper">
             <form class="header__form" action="https://echo.htmlacademy.ru" method="post">
               <label class="header__label header__label--search">
-                <input type="search" value="Поиск:">
+                <input type="search" placeholder="Поиск:">
               </label>
             </form>
 
@@ -119,7 +119,7 @@
                 <span class="categories-slider__text">Настоящие мужские игрушки!</span>
               </p>
               <img src="img/slider-layer01.jpg" width="620" height="266" alt="Раздел перфораторы">
-              <a class="categories-slider__button button" href="#">
+              <a class="categories-slider__button button" href="catalog.html">
                 <span>Открыть каталог</span>
               </a>
             </div>
@@ -130,7 +130,7 @@
                 <span class="categories-slider__text">Соседям на радость!</span>
               </p>
               <img src="img/slider-layer02.jpg" width="620" height="266" alt="Раздел дрели">
-              <a class="categories-slider__button button" href="#">
+              <a class="categories-slider__button button" href="catalog.html">
                 <span>Открыть каталог</span>
               </a>
             </div>
@@ -312,9 +312,15 @@
         </div>
 
         <ul class="services__items">
-          <li class="services__item services__item--active">Доставка</li>
-          <li class="services__item">Гарантия</li>
-          <li class="services__item">Кредит</li>
+          <li class="services__item services__item--active">
+            <a href="#" class="services__link">Доставка</a>
+          </li>
+          <li class="services__item"> 
+            <a href="#" class="services__link">Гарантия</a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link">Кредит</a>
+          </li>
         </ul>
 
         <div class="services__slider services-slider">
@@ -382,7 +388,7 @@
         <h2 class="contacts__title">Контакты</h2>
         <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис:</p>
         <a class="contacts__link" href="#">
-          <img src="img/map-small.jpg" width="300" height="158" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <img src="img/map-small.jpg" class="contacts__pic" width="300" height="158" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </a>
         <a class="contacts__button button" href="#">
           <span>Заблудились? Напишите нам!</span>
@@ -468,6 +474,7 @@
     <div class="popup write-us">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="write-us__button-close"></div>
         <div class="write-us__container">
           <div class="write-us__item">
             <label class="write-us__label" for="login-field">Ваше имя:</label>
@@ -492,9 +499,11 @@
     </div>
 
     <div class="popup big-map">
+      <div class="big-map__button-close"></div>
       <a class="big-map__link" href="#">
         <img src="img/map-big.png" width="970" height="476" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </a>
     </div>
   </body>
+  <script src="script/script.js"></script>
 </html>
