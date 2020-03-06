@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -17,9 +17,8 @@
 
           <div class="header__top-wrapper">
             <form class="header__form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="header__label header__label--search">
-                <input type="search" placeholder="Поиск:">
-              </label>
+              <label class="header__label header__label--search" for="search"></label>
+              <input type="search" id="search" placeholder="Поиск:">
             </form>
 
             <ul class="header__top-menu top-menu">

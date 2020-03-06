@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans.woff);
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans.woff2);
+}
+
 html,
 body {
   position: relative;
@@ -98,9 +108,12 @@ footer li {
   align-items: center;
 }
 
-input[type="search"] {
+.header__form input[type="search"] {
+  position: relative;
+
   padding: 13px 0px 13px 49px;
   border: none;
+  box-sizing: border-box;
 
   width: 270px;
   
@@ -109,12 +122,28 @@ input[type="search"] {
   color: inherit;
   
   background-color: transparent;
+  background-image: url(../img/icon-search.png);
+  background-repeat: no-repeat;
+  background-position: 17px 12px;
+
   outline: none;
 }
 
-input[type="search"]:hover,
+.header__form input[type="search"]:hover,
 .top-menu__link:hover {
   background-color: #212a3a;
+}
+
+.header__form input[type="search"]:hover {
+  background-image: url(../img/icon-search-hover.png);
+  background-repeat: no-repeat;
+  background-position: 17px 12px;
+}
+
+.header__form input[type="search"]:focus {
+  background-image: url(../img/icon-search-focus.png);
+  background-repeat: no-repeat;
+  background-position: 17px 12px;
 }
 
 input[type="search"]:focus {
@@ -153,25 +182,6 @@ input[type="search"]:focus {
 
 :-ms-input-placeholder input[type="search"]:focus {
  color: inherit;
-}
-
-.header__label {
-  position: relative;
-}
-
-.header__label::before {
-  content: "";
-
-  position: absolute;
-  top: 0px;
-  left: 17px;
-
-  width: 17px;
-  height: 17px;
-
-  background-image: url(../img/icon-search.svg);
-
-  opacity: 0.3;
 }
 
 .top-menu__link:active {
@@ -285,10 +295,11 @@ input[type="search"]:focus {
 
 .header__description {
   margin: 0px;
-  margin-left: 53px;
+  margin-right: 70px;
+  padding-left: 53px;
   padding-top: 2px;
 
-  width: 197px;
+  width: 250px;
 
   font-size: 16px;
   line-height: 23px;
@@ -297,7 +308,7 @@ input[type="search"]:focus {
 }
 
 .header__contact {
-  margin-left: 70px;
+  margin-right: 51px;
 }
 
 .header__contact-phone {
@@ -341,8 +352,8 @@ input[type="search"]:focus {
 
 .header__reg {
   margin: 0px;
-  margin-left: 69px;
   padding: 0px;
+  padding-left: 18px;
 
   display: flex;
   flex-direction: row;
@@ -406,10 +417,6 @@ input[type="search"]:focus {
   padding-left: 25px;
 
   width: 150px;
-}
-
-.personal-area {
-  margin-left: 51px;
 }
 
 .personal-area__login {
@@ -1759,7 +1766,7 @@ input[type="radio"]:disabled + .radio__label {
   top: 64px;
   left: 0px;
 
-  width: 396px;
+  width: 401px;
 }
 
 .services__title,
@@ -1785,6 +1792,7 @@ input[type="radio"]:disabled + .radio__label {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+  letter-spacing: 0.1px;
 }
 
 .services__items {
@@ -1864,7 +1872,7 @@ input[type="radio"]:disabled + .radio__label {
 }
 
 .services-slider__text--delivery {
-  width: 274px;
+  width: 278px;
 }
 
 .services-slider__delivery::after {
@@ -1955,13 +1963,13 @@ input[type="radio"]:disabled + .radio__label {
 .advantages p:first-of-type {
   margin-bottom: 25px;
 
-  width: 511px;
+  width: 518px;
 }
 
 .advantages p:nth-of-type(2) {
   margin-bottom: 20px;
 
-  width: 385px;
+  width: 391px;
 }
 
 .delivery {
@@ -2204,7 +2212,7 @@ input[type="radio"]:disabled + .radio__label {
 }
 
 .footer__social-items {
-  margin-right: 115px;
+  margin-right: 117px;
   
   display: flex;
   flex-direction: row;
