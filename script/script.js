@@ -49,22 +49,17 @@ console.log(bigMap);
 console.log(bigMapClose);
 
 
-var boschBookmark = document.querySelectorAll(".bosch__bookmark");
+var boschBuyActive = document.querySelector(".bosch__buy--active");
 
-var popupCart = document.querySelector(".popup-cart");
+var boschBookmarkActive = document.querySelector(".bosch__bookmark--active");
 
-/*var popupCartClose = popupCart.querySelector(".poput-cart__button-close");
-
-boschBookmark.addEventListener("click", function(evt) {
+boschBuyActive.addEventListener("click", function(evt) {
   evt.preventDefault();
-  popupCart.classList.add("popup-cart--open");
 });
 
-popupCartClose.addEventListener("click", function(evt) {
+boschBookmarkActive.addEventListener("click", function(evt) {
   evt.preventDefault();
-  popupCart.classList.remove("popup-cart--open");
-});*/
+});
 
-console.log(boschBookmark);
-console.log(popupCart);
-//console.log(popupCartClose);
+console.log(boschBuyActive);
+console.log(boschBookmarkActive);
